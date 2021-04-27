@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>tibu</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css.map" />
+    <script src="./app/pouchdb-7.2.1.min.js"></script>
+
+    <script src="./app/main.js"></script>
+    <script src="./app/datos.js"></script>
+
+</head>
+
+<body>
+    <main>
+
+
+        <div class="fondo_stars">
+           
+        </div>
+        <div class="content">
+
+            <div class="menuInicial">
+                <div class="botonInfo">
+                    <span class="fa fa-info-circle"></span>
+                </div>
+                <div class="botonDescarga boton" id="botonDescarga">
+                   <a id="fa-plus" href="#"> <span  class="fa fa-plus"></span></a>
+                </div>
+
+            </div>
+            <div id="tiempo" class="imgMarte">
+                <img src="./assets/img/iluMarte.png" alt="">
+                <div class="horaMarte">
+                    <p>20:00:45</p>
+                </div>
+            </div>
+            <div class="datosGenerales">
+                <div class="temperaturaMedia">
+                    <p>1º</p>
+                </div>
+                <div class="tempAire">
+                    TEMPERATURA AIRE
+                    <div class="tempAire_datos">
+                        min <p id="tempAireMin" class="tempAire_min"></p>
+                        max <p id="tempAireMax" class="tempAire_max"></p>
+                    </div>
+                </div>
+                <div class="grupo_fila2">
+
+                    <div class="presion">
+                        PRESIÓN <p id="presion1" class="datosPresion"> </p>
+                    </div>
+                    <div id="estadoTiempo" class="estadoTiempo">
+                        <div id="sunny">
+                            <!-- <span class="fa fa-sun-o"></span>-->
+                        </div>
+                        <div id="cloudy" class="cloud">
+                             <!--<span class="fa fa-cloud"></span>-->
+                        </div>
+                        <div id="windy" class="windy">
+                            <!--<img src="./assets/img/viento.png" alt="">-->
+
+                        </div>
+
+                    </div>
+                    <div class="viento">
+                        SOLES - <p id="numSol" class="datosTiempo"></p>
+                    </div>
+                </div>
+                <div class="tempSuelo">
+                    TEMPERATURA SUELO
+                    <div class="tempSuelo_datos">
+                        min <p id="tempSueloMin" class="tempSuelo_min"></p>
+                        max <p id="tempSueloMax" class="tempSuelo_max"></p>
+                    </div>
+                </div>
+            </div>
+<div class="datosGuardados">
+  <button><a href="guardado.html">DATOS GUARDADOS</a></button>  
+</div>
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+
+/* {
+  border: 1px solid pink;
+}*/
+
+html,
+body {
+
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  list-style: none;
+}
+
+main {
+  margin: auto;
+  background: linear-gradient(180.32deg, #1f171d 31.8%, #3D303D 143.18%);
+  padding: 2rem;
+}
+
+
+
+
+.content {
+  z-index: 2;
+  position: relative;
+  margin: 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, auto);
+}
+
+.imgMarte {
+  grid-area: 3 / 1 / span 1 / span 2;
+  margin: auto;
+  text-align: center;
+  display: flex;
+
+  img {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+  }
+
+  .horaMarte {
+
+    //grid-area: 3 / 1 / span 1 / span 2;
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    top: 68%;
+    z-index: 4;
+    width: 100%;
+    height: auto;
+
+    //margin: auto;
+    p {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+  }
+}
+
+.menuInicial {
+  grid-area: 1 / 1 / span 1 / span 2;
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+
+  div {
+    width: auto;
+  }
+
+  .botonInfo {
+    color: white;
+
+  }
+
+  .boton {
+
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+    }
+
+  }
+
+}
+
+.datosGenerales {
+  grid-area: 2 / 1 / span 1 / span 2;
+  color: white;
+
+  .temperaturaMedia {
+    font-size: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin: 0;
+
+    }
+  }
+
+}
+
+.tempAire {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+
+  .tempAire_datos {
+    justify-content: center;
+    display: flex;
+    font-weight: normal;
+
+    p {
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.grupo_fila2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+
+  .estadoTiempo {
+    font-size: 200px;
+    color: #827499;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+
+    .windy {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 200px;
+        margin: auto;
+      }
+
+    }
+  }
+
+  .presion {
+    display: flex;
+
+    p {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .viento {
+    display: flex;
+
+    p {
+      margin-left: 0.5rem;
+    }
+  }
+
+}
+
+.tempSuelo {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+
+  .tempSuelo_datos {
+    justify-content: center;
+    display: flex;
+    font-weight: normal;
+
+    p {
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.datosGuardados {
+  grid-area: 4 / 1 / span 1 / span 2;
+  color: white;
+  width: 100%;
+  display: flex;
+
+  //justify-content: center;
+  button {
+    margin: auto;
+    width: 35%;
+    height: 4rem;
+    background: #827499;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 11px 4px rgba(145, 132, 167, 0.67);
+    border-radius: 41px;
+
+    a {
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 20px;
+      text-align: center;
+
+      color: #3D303D;
+    }
+  }
+
+  .tituloDatos {
+    width: 100%;
+    font-size: 2.8rem;
+    font-weight: bold;
+    border-bottom: solid 3px white;
+  }
+
+
+  //datos guardados index2
+  a {
+    width: 100%;
+
+    .tituloGuardar {
+      text-decoration: none;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      border-bottom: solid white 3px;
+      margin-bottom: 0.5rem;
+    }
+
+    .item_datosGuardados {
+      width: 100%;
+      margin: auto;
+      font-size: 25px;
+      text-decoration: none;
+      color: white;
+
+      //display: flex;
+      //align-content: right;
+
+
+      .magnitud {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+
+          font-weight: bold;
+          margin: 0;
+          margin-right: 0.8rem;
+
+        }
+
+        .presionG {
+
+          display: flex;
+          align-items: center;
+        }
+
+        .itemMagnitud {
+          display: flex;
+
+          margin-bottom: 0.5rem;
+          margin-top: 0.5rem;
+
+        }
+
+        .estadoGuardado {
+          //margin-left: ;
+          font-size: 5rem;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          margin-left: 3rem;
+          margin-right: 3rem;
+        }
+
+        .tempAire {
+
+          .itemMagnitud {
+
+            margin: 0;
+            font-weight: normal;
+
+          }
+        }
+
+
+      }
+    }
+  }
+
+  .grupo2G {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+}
+
+
+
+
+
+
+//RESPONSIVE//
+@media screen and (max-width: 570px) {
+main{
+  padding: 0.5rem;
+  min-height: 667px;
+}
+  .content {
+
+    .horaMarte {
+      top: 70%;
+      font-size: 3rem;
+    }
+
+    .datosGenerales {
+      .temperaturaMedia {
+        font-size: 90px;
+      }
+    }
+
+    .tempAire {
+      font-size: 18px;
+
+      .tempAire_datos {
+        font-size: 14px;
+      }
+    }
+
+    .grupo_fila2 {
+      font-size: 14px;
+
+      .estadoTiempo {
+        font-size: 80px;
+      }
+
+    }
+
+    .tempSuelo {
+      font-size: 18px;
+
+      .tempSuelo_datos {
+        font-size: 14px;
+
+      }
+    }
+
+    .datosGuardados {
+      display: grid;
+      button {
+        width: 40%;
+        height: 3.2rem;
+
+        a {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+      .tituloGuardar {
+        font-size: 25px;
+      }
+    
+      .item_datosGuardados {
+        font-size: 14px;
+
+    
+    
+        .magnitud {
+          margin-bottom: 1.5rem;
+          .estadoGuardado {
+            font-size: 25px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+    
+          }
+          .tempAire {
+
+            .itemMagnitud {
+              font-size: 14px;
+              margin: 0;
+              font-weight: normal;
+  
+            }
+          }
+        }
+      }
+    }
+
+
+
+    .menuInicial {
+      font-size: 2.5rem;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
