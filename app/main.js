@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    //PRESIÓN
+    //PRESIÓN 
     fetch('https://mars-weather-rems.netlify.app/rems.json')
         .then(res => res.json())
         .then(res => {
